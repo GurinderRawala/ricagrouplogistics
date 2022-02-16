@@ -20,7 +20,7 @@ const ContactForm = () =>{
 
 
     return(
-        <div className="col-sm-6 paragraph Body">
+        <div className="col-sm-6 paragraph Body" style={{marginLeft: 25}}>
         <h4>Fill this form to Contact Us</h4>
         <form onSubmit={Submit} method="POST" encType="multipart/form-data">
             <input type="text" value={inputs.Name || ''} name="Name" placeholder="Name" onChange={handleChange} required /><br /><br/>

@@ -13,7 +13,7 @@ const Footer = () =>{
                           <div className="row">
                           <div className="col-sm-4">
                               <h4>Call Us</h4>
-                              <p>+1 (647) 482-4890</p>
+                              <p>+1 (587) 574-4890</p>
                               <hr />
                               <h4>Email Us</h4>
                               <p>dispatch@ricagrouplogistics.com</p>

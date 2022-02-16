@@ -17,7 +17,7 @@ const Contact = () =>{
 			<p>
 			  Rica Group Logistics<br />
           29 Hillsbury Dr Brampton ON L6X 4Z5<br />
-          Phone: +1 (647) 482-4890<br />
+          Phone: +1 (587) 574-4890<br />
           Email: dispatch@ricagrouplogistics.com
       </p>
 					

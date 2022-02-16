@@ -5,8 +5,8 @@ import  rica4  from '../Assets/rica4.jpg';
 //import  rica3  from '../Assets/rica3.jpg';
 //import rica3 from 'https://media.istockphoto.com/photos/long-haul-semi-truck-on-a-rural-western-usa-interstate-highway-picture-id1156528620?k=20&m=1156528620&s=612x612&w=0&h=0omNL3F_GRFqR62yxLDrfpBq7tuNPUhNw6YFbLuxuoQ=';
 
-import  rica2  from '../Assets/rica2.jpg';
-import  rica6  from '../Assets/rica6.jpg';
+//import  rica2  from '../Assets/rica2.jpg';
+//import  rica6  from '../Assets/rica6.jpg';
 
 const Slideshow = () =>{
     const slideImages = [
@@ -28,7 +28,7 @@ const Slideshow = () =>{
           <div className='effect'>
            <h5>We're here to help</h5>
            <h4>Call Us: <br></br>
-           +1 (647) 482-4890</h4>
+           +1 (587) 574-4890</h4>
            <Link className='btn btn-info' to={"/Contact"}>Contact</Link>
            </div>
     
