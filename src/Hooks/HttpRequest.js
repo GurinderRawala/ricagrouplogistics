@@ -1,15 +1,16 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import rica from '../api/rica';
+//import RicaApi from '../api/RicaApi';
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () =>{
 
     
     const [response , setResponse] = useState('');
-   
+    const [err, setErr ] = useState('');
     const [isLoading, setLoading] = useState(false);
   // console.log(response);
-    const SendInput = async(Values, url) =>{
+    const Post = async(Values, url) =>{
         const formData = new FormData();
         for(const x in Values){
             formData.append(x, Values[x]);
@@ -17,12 +18,8 @@ export default () =>{
        // console.log(formData);
         try {
             setLoading(true);
-            const Response = await rica.post(url,formData,
-            {
-                headers:{
-                    "Content-Type": "multipart/form-data" 
-                }
-            });
+        
+            const Response = await rica.post(url, formData);
 
             if(Response){
                 //setResponse(Response.data);
@@ -31,10 +28,11 @@ export default () =>{
                 setLoading(false);
             }
         } catch (error) {
-            console.log(error.message);
+            setLoading(false);
+            setErr(error)
         }
           
         };
      
-   return[response, SendInput, isLoading];
+   return{ response, err, Post, isLoading }
 }

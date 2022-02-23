@@ -952,7 +952,7 @@ export default () =>{
 $(document).ready(() =>{
 
     for(var cc= 0; cc < country.length; cc++){
-        $('.country_codes').prepend('<option value="'+ country[cc].code +'">' + country[cc].name + ' ' + country[cc].code + '</option>');
+        $('.country_codes').append('<option value="'+ country[cc].code +'">' + country[cc].name + ' ' + country[cc].code + '</option>');
     
     }
 

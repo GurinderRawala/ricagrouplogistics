@@ -1,14 +1,12 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import { Row } from 'react-bootstrap';
 import { FaSpinner } from 'react-icons/fa';
-import * as $ from 'jquery';
 import CountryCode from '../Hooks/CountryCode';
 import HttpRequest from '../Hooks/HttpRequest';
 
 const CareerForm = () =>{
     const [inputs, setInputs] = useState({});
-    const [res, Req, isLoading] =  HttpRequest()
-    CountryCode()
+    const { response, err, Post, isLoading } =  HttpRequest()
     const handleChange = (event) => {
       const name = event.target.name;
       const value = event.target.value || event.target.files;
@@ -17,9 +15,25 @@ const CareerForm = () =>{
 
     const Submit = (e) =>{
         e.preventDefault();
-        Req(inputs, "/check.php");
+        const Load = {
+            firstname: inputs.firstname,
+            lastname: inputs.lastname,
+            email: inputs.email_,
+            phone: `${inputs.country_codes} ${inputs.phone}`,
+            address: `${inputs.street}, ${inputs.city} ${inputs.state} ${inputs.postal}`,
+            position: inputs.position,
+            equipment: inputs.equipment,
+            message: inputs.Request,
+            emailAttachments: inputs.file
+            
+        }
+        Post(inputs, "/check.php");
        //console.log(inputs)
     }
+
+    useEffect(() =>{
+        CountryCode()
+    }, [])
 
     return(
 <div className="col-sm-12 text-center paragraph">
@@ -78,7 +92,8 @@ const CareerForm = () =>{
         <button className="btn btn-danger" style={{borderRadius: 20}}>Submit</button>
 </form>
     <div className="respond" style={{padding: 10}}>
-    { !isLoading && res !== ''? res: isLoading? <FaSpinner />: null }
+  
+    { !isLoading && response !== ''? response: isLoading? <FaSpinner />: null }
     </div> 
 </div>
     )

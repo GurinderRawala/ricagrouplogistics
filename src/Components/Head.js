@@ -12,7 +12,7 @@ const Head = () =>{
     
     <div style={{backgroundColor: 'black'}}>
          <Helmet>
-          <title>Rica Group Logistics</title>
+          <title>Rica Group Logistics | Power Past Borders</title>
         </Helmet>
          <Container>
           <Row>

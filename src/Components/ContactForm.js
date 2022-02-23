@@ -5,7 +5,7 @@ import HttpRequest from '../Hooks/HttpRequest';
 //action="check.php"
 const ContactForm = () =>{
     const [inputs, setInputs] = useState({});
-    const [res, Req, isLoading] =  HttpRequest()
+    const { response, err, Post, isLoading } =  HttpRequest()
     CountryCode()
     const handleChange = (event) => {
       const name = event.target.name;
@@ -15,12 +15,12 @@ const ContactForm = () =>{
 
     const Submit = (e) =>{
         e.preventDefault();
-        Req(inputs, "/check.php");
+        Post(inputs, "/check.php");
     }
 
 
     return(
-        <div className="col-sm-6 paragraph Body" style={{marginLeft: 25}}>
+        <div>
         <h4>Fill this form to Contact Us</h4>
         <form onSubmit={Submit} method="POST" encType="multipart/form-data">
             <input type="text" value={inputs.Name || ''} name="Name" placeholder="Name" onChange={handleChange} required /><br /><br/>
@@ -37,7 +37,7 @@ const ContactForm = () =>{
            <textarea name="msg" value={inputs.msg || ''} placeholder="Write your message..."  onChange={handleChange}></textarea><br/><br/>
            <button className="btn btn-info" style={{borderRadius: 20 }}>Submit</button> 
         </form>
-        <div className="respond" style={{ padding: 10 }}>{ !isLoading && res !== ''? res: isLoading? <FaSpinner />: null }</div>
+        <div className="respond" style={{ padding: 10 }}>{ !isLoading && response !== ''? response: isLoading? <FaSpinner />: null }</div>
       </div>
     )
 }
