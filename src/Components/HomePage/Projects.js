@@ -1,10 +1,10 @@
 import React from 'react';
-
+const backImg = 'https://th.bing.com/th/id/R.9cb5494cafe2fc0eea213588155b694a?rik=uRIM72JfpJgwYQ&riu=http%3a%2f%2fwww.wallpaperbetter.com%2fwallpaper%2f627%2f293%2f307%2fnature-forest-road-mountain-mist-autumn-photo-download-1080P-wallpaper.jpg&ehk=NpSgxUPETIycAYLp9wZuNjjFiqZqUP7%2bhJXDay3ssjU%3d&risl=&pid=ImgRaw&r=0'
 const Projects = () =>{
     return(
     <div className="col-sm-12">
-        <div className="backimg" style={{backgroundImage: `url("https://images.pexels.com/photos/93398/pexels-photo-93398.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500")`, padding: '10%'}}>
-        <div className="container">
+        <div className="backimg" style={{backgroundImage: `url("${backImg}")`, padding: '10%'}}>
+        <div data-aos="fade-left" className="container">
         <div className='row'>
             <div className="col-sm-4 social text-center">
                 <i className="fa fa-user"></i>

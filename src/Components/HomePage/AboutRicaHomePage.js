@@ -12,7 +12,7 @@ const AboutRicaHomePage = () =>{
                   <p style={{fontSize: 16}}>Rica Group Logistics has been a renowned name in GTA and we offer countless reasons for our customers why they must invest in our trucking services.</p>
               </div>
             {/*Add row class */}
-        <div className='row'>
+        <div className='row' data-aos="fade-right">
               <div className="col-sm-4 social" style={{padding: '3%'}}>
               
                   <div className="grid-container">
@@ -91,7 +91,7 @@ const AboutRicaHomePage = () =>{
          
               </div>
         <div className="col-sm-4" style={{padding: '3%'}}>
-            <div>
+            <div data-aos="fade-up-right">
           <img src="https://images.pexels.com/photos/8909442/pexels-photo-8909442.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style={{maxWidth: '100%', height: 'auto'}} />
          </div>
         </div>

@@ -9,7 +9,9 @@ import Careers from './Screens/Careers';
 import Services from './Screens/Services';
 import Aboutus from './Screens/Aboutus';
 import Footer from './Components/Footer';
+import { AosInit } from './aos';
 function App() {
+  AosInit()
   return (
     <BrowserRouter>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />

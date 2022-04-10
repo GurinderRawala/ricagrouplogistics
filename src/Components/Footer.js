@@ -8,16 +8,16 @@ const Footer = () =>{
         <div className="container-fluid" style={{marginTop: -25}}>
             <div className="row">
                 <div className="col-sm-12" style={{padding: 0}}>
-                    <div className="backimg footer" style={{backgroundImage: `url("https://i.pinimg.com/originals/79/67/e0/7967e04de5a8294fa7bc859b4bfdb3f0.jpg")`}}>
+                    <div className="footer" style={{backgroundColor: '#333', color: '#fff'}}>
                       <div className="container">
                           <div className="row">
                           <div className="col-sm-4">
                               <h4>Call Us</h4>
                               <p>+1 (587) 574-4890</p>
-                              <hr />
+                              <br />
                               <h4>Email Us</h4>
                               <p>dispatch@ricagrouplogistics.com</p>
-                              <hr />
+                              <br />
                           </div>
                           <div className="col-sm-4">
                             <h4>Our Services</h4>
@@ -35,10 +35,11 @@ const Footer = () =>{
                                 </Link>
                             </li>
                           </ul>
+                          <br />
                           </div>
                           <div className="col-sm-4">
                               <h4>Visit Us</h4>
-                              <hr />
+                    
                               <p>29 Hillsbury Dr Brampton ON L6X 4Z5</p>
                               <div className="ulist">
                                <Link to={"#"} style={{fontSize: 28, margin: 8}}>
@@ -55,7 +56,7 @@ const Footer = () =>{
                     <div className="container-fluid">
                      <div className="row">
                     
-                          <hr />
+                          <br />
                 <div className="col-sm-6 text-left" style={{padding: 5}}>Copyright &copy; { new Date().getFullYear().toString() } Rica Group Logistics. All rights Reserved</div>
                 <div className="col-sm-6" style={{padding: 5, textAlign: 'right'}}>Website design by gurinder_rawala <FaInstagram /></div>
                     

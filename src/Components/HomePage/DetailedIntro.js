@@ -1,19 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+const photo = 'https://th.bing.com/th/id/OIP.Hf5S6DHsNhZYFofv4wBYswHaE8?pid=ImgDet&rs=1'
+const backgroundImg = 'https://s1.cdn.autoevolution.com/images/news/gallery/freightliner-inspiration-truck-can-now-self-drive-itself-legally-in-the-us-video-photo-gallery_1.jpg'
+//require("../../Assets/rica7.jpg")
 const DetailedIntro = () =>{
     return(
     <div className="col-sm-12">
-        <div className="backimg" style={{backgroundImage: `url(${require('../../Assets/rica9.jpg')})`}}>
+        <div className="backimg" style={{backgroundImage: `url(${backgroundImg})`}}>
             <div className="container" style={{padding: '5%'}}>
                 <div className='row'>
                 <div className="col-sm-6">
-                    <div style={{width: '100%', height: 350, position: 'relative'}}>
-                    <img src={require("../../Assets/rica7.jpg")} style={{width: '100%', height: '100%' }}/>
+                    <div data-aos="fade-up-right" style={{width: '100%', height: 350, position: 'relative'}}>
+                    <img src={photo} style={{width: '100%', height: '100%' }} alt='img-some'/>
                     <div className='darkCover'></div>
                        </div>
                 </div>
-                <div className="col-sm-6">
+                <div data-aos="fade-up" className="col-sm-6">
                     <h3>About Rica Group Logistics</h3>
                     <hr />
                     <p>Rica Group Logistics is a leading transportation company throughout North America. 

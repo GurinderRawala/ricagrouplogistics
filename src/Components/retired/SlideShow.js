@@ -22,7 +22,7 @@ const Slideshow = () =>{
         <div>
         <Slide easing="ease">
           <div className="each-slide" style={{position: 'relative'}}>
-           <img src={slideImages[0]} className="slideimg" />
+           <img src={slideImages[0]} className="slideimg" alt='some-slide' />
            <div className='darkCover'></div>
 
           <div className='effect'>
@@ -34,7 +34,7 @@ const Slideshow = () =>{
     
           </div>
           <div className="each-slide" style={{position: 'relative'}}>
-            <img src={slideImages[1]} className="slideimg" />
+            <img src={slideImages[1]} className="slideimg" alt='some-slide'  />
             <div className='darkCover'></div>
             
             <div className='effect'>
@@ -45,7 +45,7 @@ const Slideshow = () =>{
 
           </div>
           <div className="each-slide" style={{position: 'relative'}}>
-          <img src={slideImages[2]} className="slideimg" />
+          <img src={slideImages[2]} className="slideimg" alt='some-slide' />
           <div className='darkCover'></div>
             
           <div className='effect'>
@@ -56,7 +56,7 @@ const Slideshow = () =>{
 
           </div>
           <div className="each-slide" style={{position: 'relative'}}>
-          <img src={slideImages[3]} className="slideimg" />
+          <img src={slideImages[3]} className="slideimg" alt='some-slide' />
           <div className='darkCover'></div>
 
           <div className='effect'>

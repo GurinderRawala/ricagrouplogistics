@@ -4,7 +4,7 @@ import SubHeader from "../Components/SubHeader";
 
 const Aboutus = () =>{
     return(
-        <div className="Body">
+        <div className="Body" style={{overflow: 'hidden'}}>
                 <SubHeader 
          title={"About Us"}
          />
@@ -20,15 +20,15 @@ const Aboutus = () =>{
                         synthetic compounds, and fairs and occasions coordination in the safest and prompt manner.
 					</p>
 		 </div>
-         <div className="col-sm-6 paragraph">
+         <div className="col-sm-6 paragraph" data-aos="fade-down-left">
 					<div style={{width: '100%', height: '300', position: 'relative'}}>
-						<img src={ require('../Assets/rica9.jpg') } style={{width: '100%', height: '100%' }} />
-						<img src={ require('../Assets/RGL_LOGO.png') } style={{width: 90, height: 90, position: 'absolute', bottom: 0, left: 0}} />
+						<img alt='aboutus-img' src={ require('../Assets/rica9.jpg') } style={{width: '100%', height: '100%' }} />
+						<img alt='logo' src={ require('../Assets/RGL_LOGO.png') } style={{width: 90, height: 90, position: 'absolute', bottom: 0, left: 0}} />
 					</div>
 		</div>
 
 
-        <div className="col-sm-12 paragraph">
+        <div className="col-sm-12 paragraph" data-aos="fade-right">
 					<h3>#1 Trucking Experts in GTA</h3>
 					<br />
 					<p>
