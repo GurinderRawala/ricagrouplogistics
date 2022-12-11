@@ -11,22 +11,22 @@ import Aboutus from './Screens/Aboutus';
 import Footer from './Components/Footer';
 import { AosInit } from './aos';
 function App() {
-  AosInit()
-  return (
-    <BrowserRouter>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
-    <Head />
-   <Routes>
-   <Route path="/" element={<Home />} />
-   <Route path="/Contact" element={<Contact />} />
-   <Route path="/Services" element={<Services />} />
-   <Route path="/Careers" element={<Careers />} />
-   <Route path="/Aboutus" element={<Aboutus />} />
-   </Routes>
-   <Footer />
-   </BrowserRouter>
-  );
+    AosInit()
+    return (
+        <BrowserRouter>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
+            <Head />
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/Contact" element={<Contact />} />
+                <Route path="/Services" element={<Services />} />
+                <Route path="/Careers" element={<Careers />} />
+                <Route path="/Aboutus" element={<Aboutus />} />
+            </Routes>
+            <Footer />
+        </BrowserRouter>
+    );
 }
 
 export default App;

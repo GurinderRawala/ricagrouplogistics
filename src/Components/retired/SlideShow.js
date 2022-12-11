@@ -20,54 +20,54 @@ const Slideshow = () =>{
 
     return(
         <div>
-        <Slide easing="ease">
-          <div className="each-slide" style={{position: 'relative'}}>
-           <img src={slideImages[0]} className="slideimg" alt='some-slide' />
-           <div className='darkCover'></div>
+            <Slide easing="ease">
+                <div className="each-slide" style={{position: 'relative'}}>
+                    <img src={slideImages[0]} className="slideimg" alt='some-slide' />
+                    <div className='darkCover'></div>
 
-          <div className='effect'>
-           <h5>We're here to help</h5>
-           <h4>Call Us: <br></br>
+                    <div className='effect'>
+                        <h5>We're here to help</h5>
+                        <h4>Call Us: <br></br>
            +1 (587) 574-4890</h4>
-           <Link className='btn btn-info' to={"/Contact"}>Contact</Link>
-           </div>
+                        <Link className='btn btn-info' to={"/Contact"}>Contact</Link>
+                    </div>
     
-          </div>
-          <div className="each-slide" style={{position: 'relative'}}>
-            <img src={slideImages[1]} className="slideimg" alt='some-slide'  />
-            <div className='darkCover'></div>
+                </div>
+                <div className="each-slide" style={{position: 'relative'}}>
+                    <img src={slideImages[1]} className="slideimg" alt='some-slide'  />
+                    <div className='darkCover'></div>
             
-            <div className='effect'>
-            <h5>Excellence</h5>
-            <h4>Safest Fleet Service<br></br> in Brampton</h4>
-            <Link className='btn btn-info' to="/Services">Service</Link>
-            </div>
+                    <div className='effect'>
+                        <h5>Excellence</h5>
+                        <h4>Safest Fleet Service<br></br> in Brampton</h4>
+                        <Link className='btn btn-info' to="/Services">Service</Link>
+                    </div>
 
-          </div>
-          <div className="each-slide" style={{position: 'relative'}}>
-          <img src={slideImages[2]} className="slideimg" alt='some-slide' />
-          <div className='darkCover'></div>
+                </div>
+                <div className="each-slide" style={{position: 'relative'}}>
+                    <img src={slideImages[2]} className="slideimg" alt='some-slide' />
+                    <div className='darkCover'></div>
             
-          <div className='effect'>
-            <h5>Delivering Success</h5>
-            <h4>Top class service delivered<br></br> over years</h4>
-            <Link className='btn btn-info' to="/Aboutus">About Us</Link>
-         </div>
+                    <div className='effect'>
+                        <h5>Delivering Success</h5>
+                        <h4>Top class service delivered<br></br> over years</h4>
+                        <Link className='btn btn-info' to="/Aboutus">About Us</Link>
+                    </div>
 
-          </div>
-          <div className="each-slide" style={{position: 'relative'}}>
-          <img src={slideImages[3]} className="slideimg" alt='some-slide' />
-          <div className='darkCover'></div>
+                </div>
+                <div className="each-slide" style={{position: 'relative'}}>
+                    <img src={slideImages[3]} className="slideimg" alt='some-slide' />
+                    <div className='darkCover'></div>
 
-          <div className='effect'>
-            <h5>We're hiring</h5>
-            <h4>Apply today and get what<br></br> you deserve</h4>
-            <Link className='btn btn-info' to="/Careers">Careers</Link>
-          </div>
+                    <div className='effect'>
+                        <h5>We're hiring</h5>
+                        <h4>Apply today and get what<br></br> you deserve</h4>
+                        <Link className='btn btn-info' to="/Careers">Careers</Link>
+                    </div>
 
-          </div>
-        </Slide>
-      </div>
+                </div>
+            </Slide>
+        </div>
     )
 }
 
